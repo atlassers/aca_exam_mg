@@ -44,5 +44,10 @@ public class ProjectionController {
   public ProjectionDto update(@RequestBody ProjectionDto dto) {
       return projectionService.update(dto);
   }
+  
+  @GetMapping("/v6/earned/{hallId},{cinemaId}")
+  public Double moneyEarned(@PathVariable("hallId")Long hallId,@PathVariable("cinemaId")Long cinemaId) {
+    return projectionService.moneyEarned(hallId,cinemaId);
+  }
 
 }
