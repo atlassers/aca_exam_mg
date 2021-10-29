@@ -4,6 +4,8 @@ import java.util.List;
 import it.euris.academy.cinema.data.dto.ProjectionDto;
 
 public interface ProjectionService {
+  
+  public Double moneyEarned(Long hallId,Long cinemaId);
 
   public ProjectionDto getById(Long id);
 

@@ -52,4 +52,9 @@ public class ProjectionServiceimpl implements ProjectionService {
     return projectionRepository.findById(id).isEmpty();
   }
 
+  @Override
+  public Double moneyEarned(Long hallId, Long cinemaId) {
+    return projectionRepository.moneyEarned(hallId, cinemaId);
+  }
+
 }
